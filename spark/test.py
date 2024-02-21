@@ -1,8 +1,8 @@
 import SparkApi
 #以下密钥信息从控制台获取
 appid = "fba38362"     #填写控制台中获取的 APPID 信息
-api_secret = "ODRhNzU1NWM5NTkxOGRiYTgxNjkxM2Ez"   #填写控制台中获取的 APISecret 信息
-api_key ="f846728e86c94263384ad69f4cdfb6e6"    #填写控制台中获取的 APIKey 信息
+api_secret = "xxx"   #填写控制台中获取的 APISecret 信息
+api_key ="xxx"    #填写控制台中获取的 APIKey 信息
 
 #用于配置大模型版本，默认“general/generalv2”
 #domain = "general"   # v1.5版本

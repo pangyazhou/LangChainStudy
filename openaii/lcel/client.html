@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <head>
+        <title>SSE 客户端</title>
+    </head>
+    <body>
+        <h1>SSE Example</h1>
+        <div id="sse-data"></div>
+        <div>
+            <label for="input">输入:</label><input id="input"/><span><button  id="query" onclick="query()">提问</button></span><br><br>
+            <label for="output">回答:</label><textarea id="output" rows="20" cols="150"></textarea>
+        </div>
+        <script>
+            const eventSource = new EventSource('http://localhost:8000/events');
+            eventSource.onmessage = function(event) {
+                // const dataDiv = document.getElementById('sse-data');
+                // dataDiv.innerHTML = 'Received message: ' + event.data;
+                const output = document.getElementById("output");
+                output.value = output.value + event.data;
+            };
+            // 后台输入查询请求
+            function query() {
+                console.log("点击有效")
+                // 获取输入框的值
+                var inputValue = document.getElementById('input').value;
+
+                // 创建一个 XMLHttpRequest 对象
+                var xhr = new XMLHttpRequest();
+
+                // 设置请求方法和URL
+                xhr.open('GET', 'http://localhost:8000/query?inputValue=' + encodeURIComponent(inputValue), true);
+
+                // 设置请求头
+                //xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+                // 处理请求完成后的回调
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        // 请求成功的处理代码
+                        console.log(xhr.responseText);
+                    }
+                };
+                xhr.send()
+            }
+        </script>
+    </body>
+</html>

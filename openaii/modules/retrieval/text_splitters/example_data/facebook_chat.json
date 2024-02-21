@@ -1,0 +1,39 @@
+{
+  "participants": [
+    {
+      "name": "John Doe",
+      "id": "user1"
+    },
+    {
+      "name": "Jane Smith",
+      "id": "user2"
+    }
+  ],
+  "messages": [
+    {
+      "sender": "user1",
+      "timestamp": 1643904000,
+      "content": "Hey, how's it going?"
+    },
+    {
+      "sender": "user2",
+      "timestamp": 1643911200,
+      "content": "Hi! I'm doing well, thanks for asking."
+    },
+    {
+      "sender": "user1",
+      "timestamp": 1643913600,
+      "content": "What have you been up to lately?"
+    },
+    {
+      "sender": "user2",
+      "timestamp": 1643920800,
+      "content": "Not much, just working and enjoying some free time. How about you?"
+    },
+    {
+      "sender": "user1",
+      "timestamp": 1643923200,
+      "content": "Same here. Let's catch up soon!"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "module_io",
+  "version": "1.0.0",
+  "dependencies": {
+  },
+  "description": "语言模型应用的核心是模型，LangChain提供了与任何语言模型交互的构建模块："
+}

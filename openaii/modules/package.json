@@ -1,0 +1,8 @@
+{
+  "name": "modules",
+  "version": "1.0.0",
+  "dependencies": {
+  },
+  "description": "LangChain为以下主要模块提供标准的、可扩展的接口和外部集成：1.Model I/O语言模型接口  2.Retrieval应用程序特定数据接口 3.Agent根据指令选择使用那些工具"
+
+}
