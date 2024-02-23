@@ -1,0 +1,13 @@
+{
+    "name": null,
+    "input_variables": [
+        "joke"
+    ],
+    "input_types": {},
+    "output_parser": null,
+    "partial_variables": {},
+    "template": "\u7ed9\u6211\u8bb2\u4e00\u4e2a\u5173\u4e8e{joke}\u7684\u7b11\u8bdd",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}
